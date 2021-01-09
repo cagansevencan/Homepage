@@ -12,10 +12,9 @@ export default function Home() {
        <title>Home Page</title>
      </Head>
 
-
        <Container maxW="2xl">
            <Text fontSize="2xl">
-               Hello, I'm Cagan. I currently reside in San Francisco Bay Area .
+               Hello🖐, I'm Cagan. I currently reside in San Francisco Bay Area .
                At the moment I work part time for{' '}
                <Link as={NextLink} href="http://careusolutions.com/" isExternal>
                    <a>CareU</a>

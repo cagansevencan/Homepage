@@ -1,6 +1,7 @@
-import { useColorMode, IconButton } from '@chakra-ui/react'
+import {useColorMode, IconButton} from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { useRouter } from 'next/router'
+import { ChevronDownIcon} from "@chakra-ui/icons";
+import {useRouter} from 'next/router'
 import {
     Menu,
     MenuButton,
@@ -17,16 +18,16 @@ import {
 } from '@chakra-ui/react'
 
 const MENU = [
-    { name: 'Homepage', url: '/' },
-    { name: 'Spotify Gems', url: '/spotify' },
-    { name: 'Bookmarks', url: '/bookmarks' },
-    { name: 'Photos', url: '/photos' },
+    {name: 'Homepage', url: '/'},
+    {name: 'Spotify Gems', url: '/spotify'},
+    {name: 'Bookmarks', url: '/bookmarks'},
+    {name: 'Photos', url: '/photos'},
 ]
 
 
-
-function Header(){
+function Header() {
     const router = useRouter()
+    const activePage = MENU.find((_) => _.url === router.pathname)
 
     return (
         <Box as={"header"} py={10}>
@@ -42,10 +43,13 @@ function Header(){
                     >
                         {/* visible part */}
                         <HStack spacing={2}>
-
+                        <Avatar size={"sm"} src={"/yeni2.jpeg"} name="Cagan Sevencan" />
+                        <Text fontSize={"lg"}>{activePage && activePage.name}</Text>
+                        <ChevronDownIcon />
                         </HStack>
-
                     </MenuButton>
+
+                    {/* Dropdown part */}
                 </Menu>
             </Container>
         </Box>
