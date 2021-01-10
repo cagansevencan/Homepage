@@ -9,19 +9,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.0-rc.8",
     "@chakra-ui/react": "^1.1.2",
-    "@chakra-ui/icons": "^1.0.2",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
-    "framer-motion": "^3.2.0",
     "airtable": "^0.10.1",
     "date-fns": "^2.16.1",
+    "framer-motion": "^3.2.0",
     "next": "10.0.5",
     "next-pwa": "^5.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "2.2.1"
   }
 }
