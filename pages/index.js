@@ -25,8 +25,8 @@ export default function Home() {
 
        <Container maxW="6xl" mt={20}>
            <NextImage
-               src="/i-am.jpg"
-               alt="Adem ilter"
+               src="/yeni2.jpg"
+               alt="Cagan Sevencan"
                width={1433}
                height={1018}
                layout="responsive"

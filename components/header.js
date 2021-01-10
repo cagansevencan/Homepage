@@ -43,13 +43,31 @@ function Header() {
                     >
                         {/* visible part */}
                         <HStack spacing={2}>
-                        <Avatar size={"sm"} src={"/yeni2.jpeg"} name="Cagan Sevencan" />
+                        <Avatar size={"sm"} src={"/new.jpeg"} name="Cagan Sevencan" />
                         <Text fontSize={"lg"}>{activePage && activePage.name}</Text>
                         <ChevronDownIcon />
                         </HStack>
                     </MenuButton>
 
                     {/* Dropdown part */}
+                    <MenuList>
+                        {MENU.map((item) => {
+                            return (
+                                <MenuItem as={"div"} p={0} key={item.url}>
+                                    <NextLink href={item.url}>
+                                        <Link
+                                            px={3}
+                                            py={2}
+                                            w={"full"}
+                                            _hover={{textDecoration: 'none'}}
+                                            >
+                                            {item.name}
+                                        </Link>
+                                    </NextLink>
+                                </MenuItem>
+                            )
+                        })}
+                    </MenuList>
                 </Menu>
             </Container>
         </Box>
