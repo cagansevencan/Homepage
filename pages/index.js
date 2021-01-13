@@ -13,15 +13,11 @@ export default function Home() {
 
       <Container maxW="2xl">
         <Text fontSize="2xl">
-          Hello🖐, I'm Cagan. I currently reside in San Francisco Bay Area . At
-          the moment I work part time for{' '}
-          <Link as={NextLink} href="http://careusolutions.com/" isExternal>
-            <a>CareU</a>
-          </Link>{' '}
-          as a Full Stack Developer.
+          Hello🖐, I'm Cagan. I currently reside in San Francisco Bay Area. At
+          the moment I work part time for a startup as a Full Stack Developer.
         </Text>
 
-        <Social mt={6} spotify/>
+        <Social mt={6} twitter spotify github instagram linkedin/>
 
       </Container>
 

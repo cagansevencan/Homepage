@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import Head from 'next/head'
 import theme from '../theme'
 import { ChakraProvider, CSSReset } from '@chakra-ui/react'

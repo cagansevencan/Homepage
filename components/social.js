@@ -12,6 +12,7 @@ function Social({
                   github = false,
                   instagram = false,
                   spotify = false,
+                  linkedin = false,
                   ...props
                 }) {
   return (
