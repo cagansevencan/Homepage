@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
-
-import styles from '../styles/Home.module.css'
 import { Container, Link, Text } from '@chakra-ui/react'
+import Social from "../components/social";
 
 export default function Home() {
   return (
@@ -21,6 +20,9 @@ export default function Home() {
           </Link>{' '}
           as a Full Stack Developer.
         </Text>
+
+        <Social mt={6} spotify/>
+
       </Container>
 
       <Container maxW="6xl" mt={20}>

@@ -13,5 +13,8 @@ module.exports = {
     medium: 'https://medium.com/@cagan.sevencan',
     github: 'https://github.com/cagansevencan',
     youtube: 'https://www.youtube.com/cagan8',
+    spotify: 'https://open.spotify.com/user/1299726247?si=fbg78emNTPez7x8dDdaXCw',
+    soundcloud: 'https://soundcloud.com/cgnsvncn',
+    linkedin: 'https://www.linkedin.com/in/cagansevencan/'
   }
 }
