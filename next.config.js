@@ -23,3 +23,17 @@ const nextConfig = (phase) => {
 }
 
 module.exports = (phase) => withPWA(nextConfig(phase))
+
+module.exports = {
+    webpack(config) {
+        config.module.rules.push({
+            test: /\.svg$/,
+            issuer: {
+                test: /\.(js|ts)x?$/,
+            },
+            use: ['@svgr/webpack'],
+        });
+
+        return config;
+    },
+};
